@@ -1,0 +1,166 @@
+
+/* Base styles */
+:root {
+  --navy-black: #050e1a;
+  --white: #FFFFFF;
+  --navy-blue: #005BA9;
+  --charcoal: #403E43;
+  --accent-blue: #1EAEDB;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border-color: var(--charcoal);
+}
+
+body {
+  background-color: var(--navy-black);
+  color: var(--white);
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+}
+
+/* Containers */
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Section Padding */
+.section-padding {
+  padding: 4rem 0;
+}
+
+@media (min-width: 768px) {
+  .section-padding {
+    padding: 6rem 0;
+  }
+}
+
+/* Navigation */
+.nav-link {
+  color: var(--white);
+  transition: color 0.3s;
+  position: relative;
+  padding: 0.5rem 0.75rem;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  color: var(--white);
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--white);
+  transition: width 0.3s;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: var(--navy-blue);
+  color: var(--white);
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: all 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  opacity: 0.9;
+  transform: translateY(-4px);
+}
+
+/* Menu Card */
+.menu-card {
+  background-color: var(--white);
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: all 0.3s;
+}
+
+.menu-card:hover {
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Menu Category */
+.menu-category {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--navy-blue);
+  margin-bottom: 1.5rem;
+}
+
+/* Contact Form Inputs */
+.contact-input {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  outline: none;
+  transition: all 0.3s;
+}
+
+.contact-input:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--navy-blue);
+}
+
+/* Header styles */
+header {
+  padding: 1rem 0;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Footer styles */
+footer {
+  background-color: var(--charcoal);
+  color: var(--white);
+  padding: 2rem 0;
+}
+
+/* Responsive grid */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -1rem;
+}
+
+.col {
+  padding: 0 1rem;
+  flex: 1;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column;
+  }
+  
+  .col {
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
+}
