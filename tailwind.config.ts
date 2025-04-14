@@ -20,8 +20,8 @@ export default {
     },
     extend: {
       colors: {
-        border: '#403E43',       // Using Charcoal Gray for borders
-        background: '#221F26',   // Dark Charcoal
+        border: '#403E43',       // Charcoal Gray
+        background: '#0A0A1A',   // Deep Navy Black
         foreground: '#FFFFFF',   // Pure White
         primary: {
           DEFAULT: '#005BA9',    // Navy Blue (HSV Blue)
@@ -37,7 +37,8 @@ export default {
         },
         hsv: {
           blue: '#005BA9',
-          lightblue: '#009DDC',
+          navy: '#0A0A1A',       // Deep Navy Black
+          charcoal: '#403E43',   // Charcoal Gray
           white: '#FFFFFF',
           black: '#000000',
           gray: '#8A898C'
@@ -88,3 +89,4 @@ export default {
   },
   plugins: [require("tailwindcss-animate")],
 } satisfies Config;
+
