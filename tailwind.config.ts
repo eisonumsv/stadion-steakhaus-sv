@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -19,19 +20,20 @@ export default {
     },
     extend: {
       colors: {
-        background: '#221F26',      // Dark Charcoal
-        foreground: '#FFFFFF',      // Pure White
+        border: '#403E43',       // Using Charcoal Gray for borders
+        background: '#221F26',   // Dark Charcoal
+        foreground: '#FFFFFF',   // Pure White
         primary: {
-          DEFAULT: '#005BA9',       // Navy Blue (HSV Blue)
-          foreground: '#FFFFFF'     // White
+          DEFAULT: '#005BA9',    // Navy Blue (HSV Blue)
+          foreground: '#FFFFFF'  // White
         },
         secondary: {
-          DEFAULT: '#403E43',       // Charcoal Gray
-          foreground: '#FFFFFF'     // White
+          DEFAULT: '#403E43',    // Charcoal Gray
+          foreground: '#FFFFFF'  // White
         },
         accent: {
-          DEFAULT: '#1EAEDB',       // Bright Blue
-          foreground: '#FFFFFF'     // White
+          DEFAULT: '#1EAEDB',    // Bright Blue
+          foreground: '#FFFFFF'  // White
         },
         hsv: {
           blue: '#005BA9',

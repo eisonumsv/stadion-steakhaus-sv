@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -34,7 +35,7 @@
 
 @layer base {
   * {
-    @apply border-border;
+    @apply border-[#403E43];
   }
 
   body {
